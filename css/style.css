@@ -6,23 +6,40 @@ html {
 * {
   font-family: "switzer", sans-serif;
   box-sizing: border-box;
-  color: #009AD9;
 }
 
 section {
   display: flex;
   align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 #hero {
-  height: 80vh;
   background-image: url(../images/hero_section.png);
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 80vh;
+  color: #009ad9;
 }
 #hero .logo {
   width: 150px;
+}
+
+#goal {
+  background-color: #fcf8f0;
+  color: #383838;
+}
+#goal .left-col {
+  min-height: 80vh;
+  background-image: url(../images/goal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#goal .right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
