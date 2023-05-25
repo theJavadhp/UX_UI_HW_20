@@ -11,6 +11,13 @@ html {
 section {
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 #hero {
@@ -18,8 +25,6 @@ section {
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   min-height: 80vh;
   color: #009ad9;
 }
@@ -42,4 +47,52 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+#userResearch {
+  background-color: #d3dbe1;
+}
+#userResearch .title {
+  text-align: center;
+}
+#userResearch .container {
+  z-index: 5;
+}
+#userResearch .card {
+  height: 100%;
+  border-color: #efefef;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 16px 0px;
+}
+#userResearch .card img {
+  width: 150px;
+  margin: auto;
+}
+#userResearch .card .card-body p {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+}
+#userResearch::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  width: 60%;
+  height: 60%;
+  background-image: url(../images/plane.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: darken;
+  z-index: 0;
+  opacity: 30%;
+}
+
+#DefinitionandIdeation {
+  background-color: #faedda;
+}
+#DefinitionandIdeation .right-col {
+  background-image: url(../images/map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 500px;
 }/*# sourceMappingURL=style.css.map */
